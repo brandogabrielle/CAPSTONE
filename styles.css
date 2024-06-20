@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.info p {
+    margin: 0;
+}
+
+.chart img {
+    width: 100px;
+    height: auto;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-panel, .right-panel {
+    width: 43%;
+}
+
+.calendar, .todo-list, .study {
+    margin-bottom: 20px;
+}
+
+#calendar {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.todo-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-list li {
+    margin-bottom: 10px;
+}
+
+.study textarea {
+    width: 60%;
+    height: 200px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}

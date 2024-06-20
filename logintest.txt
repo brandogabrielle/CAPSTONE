@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Streak</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header, .about {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .header {
+            background-color: #f8f8f8;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .login-form {
+            display: inline-block;
+            text-align: left;
+            margin-top: 20px;
+        }
+        .login-form input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .about .subheader {
+            display: inline-block;
+            width: 30%;
+            vertical-align: top;
+            padding: 0 10px;
+        }
+        .about .subheader img {
+            display: block;
+            margin: 0 auto 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Study Streak</h1>
+        <p>Your daily study companion</p>
+        <div class="login-form">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+    </div>
+
+    <div class="about">
+        <h2>About</h2>
+        <div class="subheader">
+            <img src="image-placeholder.png" alt="Placeholder Image">
+            <h3>Subheader 1</h3>
+            <p>Some description about this section.</p>
+        </div>
+        <div class="subheader">
+            <img src="image-placeholder.png" alt="Placeholder Image">
+            <h3>Subheader 2</h3>
+            <p>Some description about this section.</p>
+        </div>
+        <div class="subheader">
+            <img src="image-placeholder.png" alt="Placeholder Image">
+            <h3>Subheader 3</h3>
+            <p>Some description about this section.</p>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "user" && password === "pass") {
+                alert("Login successful!");
+            } else {
+                alert("Invalid username or password.");
+            }
+        }
+    </script>
+</body>
+</html>
